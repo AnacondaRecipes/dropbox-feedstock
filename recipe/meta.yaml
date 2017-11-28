@@ -1,6 +1,6 @@
 {% set name = "dropbox" %}
-{% set version = "8.4.0" %}
-{% set sha256 = "9709c2af6d0198f87b2506f23dd0b835128d7bedb007d40a9e004c594a664550" %}
+{% set version = "8.5.0" %}
+{% set sha256 = "ee54d842685f84d7fdd2a9d49cf220a6672090e80c650e4b93e982c7711e785d" %}
 {% set build = 0 %}
 
 package:
