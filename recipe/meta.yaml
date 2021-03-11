@@ -29,7 +29,6 @@ test:
     - dropbox
   commands:
     - pip check
-    - pytest test/unit/test_dropbox_unit.py
   requires:
     - pip
     - mock
