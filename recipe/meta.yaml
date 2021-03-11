@@ -27,7 +27,7 @@ requirements:
 test:
   imports:
     - dropbox
-    - stone >=2
+    - stone
   commands:
     - pip check
     - pytest test/unit/test_dropbox_unit.py
