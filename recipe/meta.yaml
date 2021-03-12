@@ -37,7 +37,6 @@ test:
     - mock
     - pytest-mock
     - coverage
-    - stone >=2 
   source_files:
     - test
 
