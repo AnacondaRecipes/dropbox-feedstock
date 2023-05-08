@@ -12,6 +12,8 @@ source:
 
 build:
   number: 0
+  # stone package is not available on s390x
+  skip: true  # [linux and s390x]
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
