@@ -63,3 +63,5 @@ extra:
   recipe-maintainers:
     - guillochon
     - BastianZim
+  skip-lints:
+    - invalid_url
