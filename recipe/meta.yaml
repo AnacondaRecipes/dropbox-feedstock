@@ -9,6 +9,7 @@ source:
   url: https://github.com/{{ name }}/{{ name }}-sdk-python/archive/v{{ version }}.tar.gz
   sha256: eec8095311fcc8b4f48f6cd3a2ee539dbf18ffc906091c80c36ac042978c5093
   patches:
+    # Use latest patch version for stone
     - patches/0001-Updated-stone-upper-bound.patch
 
 build:
@@ -29,7 +30,6 @@ requirements:
     - python
     - requests >=2.16.2
     - six >=1.12.0
-    # Use latest patch version for stone to avoid import imp error.
     - stone >=2,<=3.3.9
 
 test:
@@ -63,7 +63,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   dev_url: https://github.com/dropbox/dropbox-sdk-python
-  doc_url: https://dropbox-sdk-python.readthedocs.io/en/latest/
+  doc_url: https://dropbox-sdk-python.readthedocs.io
 
 extra:
   recipe-maintainers:
