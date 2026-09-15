@@ -1,5 +1,5 @@
 {% set name = "dropbox" %}
-{% set version = "12.2.0" %}
+{% set version = "12.2.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}-sdk-python/archive/v{{ version }}.tar.gz
-  sha256: 54077e15dd235524ab5ed0fcb9f8f7470039d74e51473f0dc81791db2528e361
+  sha256: 9434c49f14d9c5a302d6ea48d92ec603b541790c449de5b8e7a8bc3bb68d06bf
 
 build:
   number: 0
@@ -18,11 +18,12 @@ requirements:
   host:
     - pip
     - python
-    - setuptools >=77.0
+    - setuptools >=77
+    - setuptools-scm >=8,<9
   run:
     - python
     - requests >=2.16.2
-    - stone >=3.5.1,<4
+    - stone >=3.5.3,<4
 
 test:
   source_files:
@@ -45,7 +46,6 @@ test:
   commands:
     - pip check
     - pytest test/unit/test_dropbox_unit.py
-
 
 about:
   home: https://www.dropbox.com/developers
