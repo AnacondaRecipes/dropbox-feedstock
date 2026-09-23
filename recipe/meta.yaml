@@ -45,7 +45,7 @@ test:
     - pytest-mock
   commands:
     - pip check
-    - pytest test/unit/test_dropbox_unit.py
+    - pytest -vv test/unit/test_dropbox_unit.py
 
 about:
   home: https://www.dropbox.com/developers
